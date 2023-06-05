@@ -1,5 +1,14 @@
 ***DRAFT DOCUMENT***
 
+***NOTE***
+In order to use LLM ggml-gpt4all-j-v1.3-groovy.bin your CPU must support avx2 
+To check for this run the following command:
+```
+grep avx2 /proc/cpuinfo 
+```
+If there is no result your cpu is not going to load that model. You will need to experiment with other models located in https://gpt4all.io/index.html under model explorer.
+
+
 ## Requirements
 . Debian 11
 
