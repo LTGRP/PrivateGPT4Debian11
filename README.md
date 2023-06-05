@@ -1,16 +1,24 @@
+***DRAFT DOCUMENT***
+
 ## Requirements
-. Python-pip
+. Debian 11
 
-. Arch-based system 
+. Python 3.10.0 (Installation instructions here ==>> https://cloudcone.com/docs/article/how-to-install-python-3-10-on-debian-11/ )
 
-. NVIDIA GPU
+. Python-pip   (Python 3.10 must be used)
+
+. Arch-based system (x86_64 preferred)
+
+. NVIDIA GPU (Not really required)
 
 ## How to install
 
 ```
-curl -LO "https://raw.githubusercontent.com/MichaelSebero/PrivateGPT4Linux/main/installer.sh"
+curl -LO "https://raw.githubusercontent.com/LTGRP/PrivateGPT4Debian11/main/installer.sh"
 
-sh /home/$USER/installer.sh
+chmod +x installer.sh
+
+./installer.sh
 ```
 
 ## How to use
@@ -36,9 +44,9 @@ The supported extensions are:
 
 Run the following command below to ingest the data.
 ```
-sudo python3 /home/$USER/privateGPT/ingest.py
+python3.10 /home/$USER/privateGPT/ingest.py
 ```
 ### 2. Run privateGPT
 ```
-sudo python3 /home/$USER/privateGPT/privateGPT.py
+python3.10 /home/$USER/privateGPT/privateGPT.py
 ```
